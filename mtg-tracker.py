@@ -22,12 +22,10 @@ while True:
     else:
         break
 print()
-print("There are a lot of formats in Magic the Gathering:")
 tournament_format = input("Enter the format of the tournament:  ").title()
 
 print()
-print("There are a lot of archetypes in Magic the Gathering:")
-user_deck_archetype = input("Enter the archetype of your deck:  ").title()
+user_deck_archetype = input("Enter the deck you played in the event: ").title()
 # Create a list to store the results of each round
 round_details = []
 
@@ -96,11 +94,12 @@ for _ in range(5):  # Change to control number of 'blinks'
     time.sleep(.3)  # To create the blinking effect
     sys.stdout.write('\033[2K\r')  # Clears the entire line and carriage returns
     time.sleep(.3)
+
 # Clear the console at the end of each round
 os.system('clear')
 
 # Store details in a dictionary
-round_details = {
+round_detail = {
     "play_draw": play_draw,
     "player mulligans": player_mulligans,
     "opponent mulligans": opponent_mulligans,
@@ -111,6 +110,6 @@ round_details = {
     "notes": notes
 }
 # Add the details for this round to the list
-round_details.append(round_details)
+round_details.append(round_detail)
 
-print(round_details)
+print(round_detail)
