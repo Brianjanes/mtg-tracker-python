@@ -22,13 +22,11 @@ while True:
     else:
         break
 print()
-print("There are a lot of formats in Magic the Gathering.  Here are a few examples:")
-print("Standard, Modern, Legacy, Vintage, Pioneer, Commander, Brawl, Pauper, and more.")
+print("There are a lot of formats in Magic the Gathering:")
 tournament_format = input("Enter the format of the tournament:  ").title()
 
 print()
-print("There are a lot of archetypes in Magic the Gathering.  Here are a few examples:")
-print("Midrange, Control, Aggro, Combo, Tempo, Ramp, and more.")
+print("There are a lot of archetypes in Magic the Gathering:")
 user_deck_archetype = input("Enter the archetype of your deck:  ").title()
 # Create a list to store the results of each round
 round_details = []
